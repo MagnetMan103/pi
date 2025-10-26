@@ -1,0 +1,10 @@
+<launch>
+  <env name="ROS_MASTER_URI" value="http://100.121.148.117:11311"/>
+  <env name="ROS_IP" value="100.99.47.55"/>
+  <!-- Camera publisher node -->
+  <node name="camera_publisher" pkg="camera_feed" type="camera_publisher.py" output="screen"/>
+
+  <!-- Movement controller node -->
+  <node name="movement_subscriber" pkg="camera_feed" type="movement_subscriber.py" output="screen"/>
+
+</launch>
