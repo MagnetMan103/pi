@@ -1,7 +1,7 @@
 import serial
 import time
 
-arduino = serial.Serial('/dev/ttyACM0', 9600, timeout=1)
+arduino = serial.Serial('/dev/ttyACM0', 115200, timeout=1)
 time.sleep(2)
 
 print('Connected to Arduino')
